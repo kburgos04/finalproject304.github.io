@@ -4,107 +4,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Biometric Technology Overview</title>
+  <title>Biometric Technology</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-      color: #333;
+      background-color: #f4f4f4;
     }
-    header, section {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
+
+    /* Sticky navigation bar */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #003366;
+      padding: 10px 0;
+      z-index: 1000;
+      text-align: center;
     }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     header {
       background-color: #003366;
       color: white;
       padding: 30px 20px;
       text-align: center;
     }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
     h2 {
       color: #003366;
-      margin-top: 40px;
+      margin-top: 0;
     }
+
+    img, iframe, video {
+      display: block;
+      max-width: 100%;
+      margin: 15px 0;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
-      font-size: 0.9em;
       color: #666;
     }
   </style>
 </head>
 <body>
 
+  <nav>
+    <a href="#intro">Introduction</a>
+    <a href="#applications">Applications</a>
+    <a href="#challenges">Challenges</a>
+    <a href="#discussion">Discussion</a>
+    <a href="#recommendations">Recommendations</a>
+  </nav>
+
   <header>
-    <h1>Understanding Biometric Technology</h1>
-    <p>Fingerprint & Facial Recognition Technologies</p>
+    <h1>Biometric Technology</h1>
+    <p>Fingerprint & Facial Recognition</p>
   </header>
 
-  <section>
+  <section id="intro">
     <h2>1. Introduction of the Technology</h2>
-    <p>Biometric technology refers to the automated recognition of individuals based on their biological and behavioral characteristics. Common biometric identifiers include fingerprints, facial features, iris patterns, and voice recognition.</p>
+    <p>Biometric technology enables identification and verification of individuals using unique biological traits. Fingerprint and facial recognition are two of the most common biometric systems today.</p>
+    <p>We chose these technologies because of their rising use in everyday devices and critical infrastructure. They are innovative yet raise complex social and ethical concerns.</p>
+     <img src="images/fingerprint.jpg" alt="Fingerprint recognition diagram" width="500">
+  <p>This image depicts different types of fingerprint scanning.</p>  </section>
 
-    <p>Our focus is on two widely used types: <strong>fingerprint recognition</strong> and <strong>facial recognition</strong>. These technologies play an increasingly critical role in securing personal data, authenticating users, and enhancing convenience in digital interactions.</p>
-
-    <p>We chose this technology because it sits at the intersection of innovation and ethical complexity. As society moves toward digital transformation, the ability to identify individuals securely while respecting privacy and social equity becomes crucial.</p>
-  </section>
-
-  <section>
+  <section id="applications">
     <h2>2. Applications of the Technology</h2>
-    <h3>Example 1: Smartphone Security</h3>
-    <p>Fingerprint and facial recognition have become standard in modern smartphones, allowing users to unlock devices, authorize payments, and verify identity. Apple's Face ID and Android’s fingerprint sensors are trusted by millions globally.</p>
-    <p><strong>Challenges:</strong> These systems must balance accuracy with speed. False positives/negatives can cause security risks or inconvenience. Additionally, privacy concerns arise when biometric data is stored or transmitted.</p>
 
-    <h3>Example 2: Border Control & Law Enforcement</h3>
-    <p>Facial recognition is widely used in airports and border security to identify travelers and detect individuals on watchlists. Police forces use facial recognition to identify suspects in public spaces.</p>
-    <p><strong>Challenges:</strong> Concerns over racial bias, wrongful identification, and mass surveillance have sparked debates. In some cities, facial recognition by law enforcement has been paused or banned due to these risks.</p>
-  </section>
-  <section>
-  <h2>3. Visualizing Biometric Technology</h2>
+    <h3>Smartphone Security</h3>
+    <p>Modern smartphones use fingerprint and facial recognition for authentication, app access, and secure payments. These methods are faster and often more secure than traditional passwords.</p>
+    <video width="600" controls>
+      <source src="videos/fingerprint-phone.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
 
-  <h3>Fingerprint Recognition Diagram</h3>
-  <img src="images/fingerprint.jpg" alt="Fingerprint recognition diagram" width="500">
-  <p>This image depicts different types of fingerprint scanning.</p>
+    <h3>Border Control and Law Enforcement</h3>
+    <p>Facial recognition is increasingly used at airports and by police forces. It helps match travelers to passports and identify people of interest in public surveillance footage.</p>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/YX8BzK_LU0E?si=C6NlMnwzgVEDeCmJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <p>This video provides an explanation of how facial recognition systems work.</p>  </section>
 
-  <h3>Facial Recognition in Action</h3>
- <iframe width="560" height="315" src="https://www.youtube.com/embed/YX8BzK_LU0E?si=C6NlMnwzgVEDeCmJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  <p>This video provides an explanation of how facial recognition systems work.</p>
-
-  <section>
-    <h2>4. Complexities and Social Challenges</h2>
-    <p>Biometric systems can reflect and reinforce societal inequalities. Algorithms trained on biased data may perform poorly on certain demographics, leading to unjust outcomes. There are also legal and ethical questions about consent and the ownership of biometric data.</p>
-
-    <p>Using biometrics in sensitive areas—like policing or public surveillance—raises questions of accountability and transparency. Even in commercial use, concerns remain about how companies collect, store, and use such personal information.</p>
+  <section id="challenges">
+    <h2>3. Complexities and Social Challenges</h2>
+    <p>Despite its promise, biometric tech brings serious challenges. Systems can be biased—facial recognition algorithms often perform poorly on darker skin tones. This leads to disproportionate misidentification and injustice.</p>
+    <p>Privacy is also a major concern. Users may not know how or where their biometric data is stored, or who has access to it. Once leaked, biometric data can't be changed like a password.</p>
   </section>
 
-  <section>
-    <h2>5. Critical Discussion of the Technology</h2>
+  <section id="discussion">
+    <h2>4. Critical Discussion of the Technology</h2>
+
     <h3>Social and Political Implications</h3>
-    <p>There is increasing concern about how biometric data might be used to monitor, control, or discriminate against individuals or groups. Surveillance programs can infringe on civil liberties if not properly regulated.</p>
+    <p>Biometrics can be used for mass surveillance, raising civil rights concerns. Several governments have paused or banned public use of facial recognition due to fears of abuse and lack of transparency.</p>
 
-    <h3>Ethical Perspectives</h3>
-    <p>From a utilitarian perspective, biometrics provide safety and convenience to the majority. However, from a deontological or rights-based approach, the risks to individual privacy and freedom may outweigh the benefits.</p>
-
-    <p>Ethics of care would emphasize the disproportionate effects on vulnerable populations, calling for a more inclusive and cautious approach to development and deployment.</p>
+    <h3>Ethical Lenses</h3>
+    <p><strong>Utilitarian:</strong> Biometrics benefit the majority by increasing convenience and safety.</p>
+    <p><strong>Deontological:</strong> Even if useful, collecting biometric data without consent violates moral rights.</p>
+    <p><strong>Ethics of Care:</strong> Focuses on vulnerable groups who may suffer more from misidentification or surveillance.</p>
   </section>
 
-  <section>
-    <h2>6. Future Recommendations</h2>
+  <section id="recommendations">
+    <h2>5. Future Recommendations</h2>
     <ul>
-      <li><strong>Technological:</strong> Invest in improving accuracy and fairness of algorithms, especially across diverse demographics.</li>
-      <li><strong>Social:</strong> Increase public awareness of how biometric data is used and provide opt-in/out choices.</li>
-      <li><strong>Policy:</strong> Governments should establish regulations for data storage, consent, and accountability to prevent misuse.</li>
+      <li><strong>Technological:</strong> Improve algorithms to reduce bias and error rates across diverse demographics.</li>
+      <li><strong>Social:</strong> Increase user awareness and give options to opt-in or opt-out of biometric systems.</li>
+      <li><strong>Policy:</strong> Create strong privacy laws governing biometric data use, storage, and accountability.</li>
     </ul>
-
-    <p>By combining technical advancement with ethical responsibility, biometric technology can be a force for good while respecting individual rights and freedoms.</p>
+    <p>With thoughtful design and regulation, biometric technology can support society without compromising individual freedoms.</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 IT 304 Final Project | Created for Educational Purposes</p>
+    <p>&copy; IT 304 Final Project | Created for Educational Use</p>
   </footer>
 
 </body>
